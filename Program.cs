@@ -67,7 +67,7 @@ public class UserManagementSystem
     static void AddUser(List<string> users)
     {
         Console.Write("Enter username to add: ");
-        string username = Console.ReadLine();
+        string username = Console.ReadLine()?.Trim().ToLower();
 
         string validationResult = ValidateUsername(username);
 
@@ -118,9 +118,7 @@ public class UserManagementSystem
         }
     }
 }
-git status
-git add .
-git commit -m "Initial project setup with user management console app"
+
 /* git status
 git add .
 git commit -m "Initial project setup with user management console app"
